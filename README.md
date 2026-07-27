@@ -48,9 +48,9 @@ var options = new EmbedderFactoryOptions
 {
     ModelName = "paraphrase-multilingual-MiniLM-L12-v2",
     ModelDimension = 384,
-    ModelPath = Path.Combine(TestHelper.GetGlobalAssetPath(), "models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/model.onnx"),
+    ModelPath = ".assets/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/model.onnx",
     TokenizerType = TokenizerType.FastTokenizer,
-    TokenizerPath = Path.Combine(TestHelper.GetGlobalAssetPath(), "models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tokenizer.json"),
+    TokenizerPath = ".assets/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tokenizer.json",
     NormalizeVector = true
 };
 
@@ -63,19 +63,3 @@ ReadOnlyMemory<float> embedding = await embedder.Encode(inputDoc);
 ```
 
 ---
-
-## Why Instead of Other dotnet Embedding Solutions?
-
-When choosing a local embedding engine for .NET, `Onnx.Runtime.Embedder` balances high performance, raw model flexibility, and minimal runtime footprint:
-
-| Feature / Metric | Onnx.Runtime.Embedder | SmartComponents.LocalEmbeddings | ElBruno.LocalEmbeddings | LLamaSharp (GGUF) |
-| :--- | :--- | :--- | :--- | :--- |
-| **In-Process Inference** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
-| **Model Flexibility** | 🌟 Any HF ONNX Model | ❌ Fixed (all-MiniLM-L6-v2) | ⚠️ Pre-configured subset | ⚠️ GGUF Models only |
-| **Tokenization Included** | ✅ FastTokenizer (Rust) | ✅ Internal | ✅ Internal | ✅ Llama tokenizer |
-| **Auto Contract Discovery** | ✅ Yes | ❌ No | ❌ No | ❌ No |
-| **SIMD Math & L2 Norm** | ✅ Native (TensorPrimitives) | ⚠️ Basic | ⚠️ Basic | ⚠️ Native C++ bindings |
-| **Memory Footprint** | ⚡ Low | ⚡ Very Low (Quantized) | ⚡ Low | 🔶 Higher (GGUF runner) |
-| **Multi-Framework** | ✅ Cross-platform | ✅ Cross-platform | ✅ Cross-platform | ⚠️ OS-Native DLLs required |
-
-
