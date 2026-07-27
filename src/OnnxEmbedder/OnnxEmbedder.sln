@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onnx.Runtime.Embedder", "Onnx.Runtime.Embedder\Onnx.Runtime.Embedder.csproj", "{7D37EE9C-39A1-4E35-9D14-C29894306116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onnx.Runtime.Embedder.Test", "Onnx.Runtime.Embedder.Test\Onnx.Runtime.Embedder.Test.csproj", "{14A3685D-3039-4A21-847A-ADD16038AE5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D37EE9C-39A1-4E35-9D14-C29894306116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D37EE9C-39A1-4E35-9D14-C29894306116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D37EE9C-39A1-4E35-9D14-C29894306116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D37EE9C-39A1-4E35-9D14-C29894306116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A3685D-3039-4A21-847A-ADD16038AE5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A3685D-3039-4A21-847A-ADD16038AE5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A3685D-3039-4A21-847A-ADD16038AE5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A3685D-3039-4A21-847A-ADD16038AE5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

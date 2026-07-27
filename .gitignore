@@ -1,0 +1,66 @@
+###################
+# OS generated files #
+##################
+.DS_Store
+Thumbs.db
+
+!.gitempty
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.log
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+wwwroot/
+dist/
+publish/
+!tools/
+tools/*
+!/tools/packages.config
+!/tools/MiniTools/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# If using the old MSBuild-Integrated Package Restore, uncomment this:
+#!**/packages/repositories.config
+
+# TFS 2012 Local Workspace
+$tf/
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Visual Studio 2015 cache/options directory
+.vs/
+
+# JustCode is a .NET coding addin-in
+.JustCode
+
+# Cool editors ;)
+.idea
+.vs
+
+# =================
+# Custom ignores #
+# =================
+
+.assets/models/**/*

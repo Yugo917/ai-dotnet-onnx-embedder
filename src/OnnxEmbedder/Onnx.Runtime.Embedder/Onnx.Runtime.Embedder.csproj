@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Onnx.Runtime.Embedder</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.25.1" />
+        <PackageReference Include="System.Numerics.Tensors" Version="10.0.7" />
+        <PackageReference Include="Tokenizers.HuggingFace" Version="2.21.4" />
+    </ItemGroup>
+
+</Project>
